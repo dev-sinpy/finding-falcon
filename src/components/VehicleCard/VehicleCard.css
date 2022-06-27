@@ -1,0 +1,43 @@
+.labl {
+  display: block;
+}
+.labl > input {
+  /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.labl > input + div {
+  /* DIV STYLES */
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.labl > input:checked + div {
+  /* (RADIO CHECKED) DIV STYLES */
+  background-color: rgb(29 78 216);
+  border: 1px solid rgb(29 78 216);
+  color: white;
+}
+
+.toggleName {
+  position: relative;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 3px;
+  background: rgb(48 194 239);
+  padding: 7px;
+  margin: 10px 5px 0 0;
+  border-radius: 100%;
+  font-size: 12px;
+}

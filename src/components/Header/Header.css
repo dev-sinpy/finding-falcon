@@ -1,0 +1,24 @@
+nav {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-btn {
+  border: none;
+  background: rgb(48 194 239);
+  border-radius: 3px;
+  color: #030200;
+  padding: 5px 15px;
+  font-size: 15px;
+}
+
+.danger {
+  background: #d54f50;
+}
